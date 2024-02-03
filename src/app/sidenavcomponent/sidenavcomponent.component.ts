@@ -8,7 +8,7 @@ import { RouterModule, Router } from '@angular/router';
   imports: [RouterModule],
   template: `
                 <!-- top navigation div -->
-    <div class="dark:bg-gray-800 w-full h-screen flex flex-col gap-[10px] justify-between bg-[#FAFAFA] ">
+    <div class="dark:bg-gray-800 w-full h-full flex flex-col gap-[10px] justify-between bg-[#FAFAFA] ">
         <div class="flex sm:justify-center justify-between pr-2 pl-3 py-3 items-center sm:px-0 sm:py-0">
             <div [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class="dark:text-gray-400 flex items-center">
                 <a [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100" class="text-red-500"><img src="../favicon.ico" alt=""></a>
