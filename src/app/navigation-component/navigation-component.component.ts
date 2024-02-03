@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponentComponent {
 
+  navShown:boolean = false;
+
+  showNav(){
+    return this.navShown = !this.navShown
+  }
+
+
 }
