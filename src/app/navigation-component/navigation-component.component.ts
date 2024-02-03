@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navigation-component',
@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './navigation-component.component.css'
 })
 export class NavigationComponentComponent {
+  @Output() Shown = new EventEmitter<{NavShow: boolean}>();
 
-  navShown:boolean = false;
+  navShown:boolean = true;
 
   showNav(){
     return this.navShown = !this.navShown
+    this.Shown.emit({NavShow: this.navShown})
   }
 
 

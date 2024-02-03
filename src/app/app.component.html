@@ -1,3 +1,17 @@
-<div class="bg-gradient-to-r font-mono  from-blue-500 shadow-md to-orange-500  sm:py-1 text-center text-white sm:font-semibold w-full">Comparison Of Different Web Development Frameworks</div>
-<app-navigation-component></app-navigation-component>
+<div class="bg-gradient-to-r font-mono hidden  from-blue-500 shadow-md to-orange-500  sm:py-1 text-center text-white sm:font-semibold w-full">Comparison Of Different Web Development Frameworks</div>
+<div class="flex justify-between w-full ">
+  @if (navShown) {
+  <app-navigation-component (Shown)="onShowNavClick($event)"></app-navigation-component>
+  }
+  <div class="sm:dhidden flex justify-between w-full">
+    <p>
+      Home
+    </p>
+    <span class="py-4 px-2 text-red-500">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </span>
+  </div>
+</div>
 <router-outlet></router-outlet>

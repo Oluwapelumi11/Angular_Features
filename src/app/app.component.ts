@@ -11,7 +11,11 @@ import { NavigationComponentComponent } from './navigation-component/navigation-
 })
 export class AppComponent implements OnInit {
   title = 'Angular_Features';
+navShown:boolean = true;
 
+  onShowNavClick(eventData: {NavShow: boolean}){
+    this.navShown=eventData.NavShow;
+  }
 
   ngOnInit(): void {
     initFlowbite();
