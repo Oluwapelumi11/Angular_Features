@@ -1,1 +1,20 @@
-<p>features works!</p>
+<div class="font-jakarta font-semibold flex justify-between py-4 sm:text-xl  px-4 sm:py-3 bg-emeral-700">
+    <p  class="">Angular Features</p>
+    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button"  class="active:bg-transparent bg-transparent focus:ring-0 flex sm:hidden " id="navtoggle" >
+          
+          <svg width="24" id="open" class="" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="5" width="24" height="2" fill="#D9D9D9"/>
+                  <rect x="9" y="12" width="15" height="2" fill="#D9D9D9"/>
+                  </svg>
+              </button>
+</div> 
+
+<div class="grid col-span-1 sm:col-span-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-6 sm:gap-2 p-2 w-[95%] sm:w-[98%] mx-auto">
+<!-- <div class="flex flex-wrap w-full space-x-2 space-y-3 px-1 "> -->
+    @for (feature of featureList; track $index) {
+
+        <app-feature-card [feature]="feature"></app-feature-card>
+        
+    }
+   
+</div>
