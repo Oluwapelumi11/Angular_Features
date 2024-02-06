@@ -1,5 +1,5 @@
 import { Component,Input } from '@angular/core';
-import { Features } from '../types';
+import { Features } from '../../types';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({

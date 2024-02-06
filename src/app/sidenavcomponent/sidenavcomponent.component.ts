@@ -52,15 +52,15 @@ import { RouterModule, Router } from '@angular/router';
                 Home
             <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
-                <div [routerLink]="'/features'" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class="dark:text-gray-400 flex group relative font-bold sm:justify-center  text-right  bg-opacity-0 transition-all ease-in-out duration-700 px-3 sm:px-0 bg-gray-300 py-2"  data-tooltip-placement="right" data-tooltip-target="feature">
+                <div [routerLink]="'features'" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class="dark:text-gray-400 flex group relative font-bold sm:justify-center  text-right  bg-opacity-0 transition-all ease-in-out duration-700 px-3 sm:px-0 bg-gray-300 py-2"  data-tooltip-placement="right" data-tooltip-target="feature">
 
-            <a [routerLink]="'/features'" routerLinkActive="bg-opacity-70 dark:bg-opacity-100" class="text-red-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-6 h-6">
+            <a [routerLink]="'features'" routerLinkActive="bg-opacity-70 dark:bg-opacity-100" class="text-red-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
 </svg>
 </a>
             <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class= " text-[#26282C4] px-3 flex sm:hidden dark:text-gray-200">Features</a>
             
-            <span [routerLink]="['/features']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
+            <span [routerLink]="['features']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
                 <img class="" src="../assets/svgs/Vector active.svg" alt="">
                 
             </span>
@@ -77,7 +77,7 @@ import { RouterModule, Router } from '@angular/router';
 </a>
             <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class= " text-[#26282C4] px-3 flex sm:hidden dark:text-gray-200">Strengths</a>
 
-            <span [routerLink]="['/Strengths']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
+            <span [routerLink]="['Strengths']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
                 <img class="" src="../assets/svgs/Vector active.svg" alt="">
 </span>
         </div>
@@ -93,7 +93,7 @@ import { RouterModule, Router } from '@angular/router';
 </a>
             <a [routerLink]="'Weaknesses'" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class= " text-[#26282C4] px-3 flex sm:hidden dark:text-gray-200 ">Weaknesses</a>
 
-            <span [routerLink]="['/Weaknesses']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
+            <span [routerLink]="['Weaknesses']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
                 <img class="" src="../assets/svgs/Vector active.svg" alt="">
 </span>
         </div>
@@ -101,14 +101,14 @@ import { RouterModule, Router } from '@angular/router';
                 Weaknesses
             <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
-        <div [routerLink]="['/Case Studies']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class="dark:text-gray-400 flex group relative font-bold sm:justify-center  text-right  bg-opacity-0 transition-all ease-in-out duration-700 px-3 sm:px-0 bg-gray-300 py-2"  data-tooltip-placement="right" data-tooltip-target="study">
+        <div [routerLink]="['Case Studies']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class="dark:text-gray-400 flex group relative font-bold sm:justify-center  text-right  bg-opacity-0 transition-all ease-in-out duration-700 px-3 sm:px-0 bg-gray-300 py-2"  data-tooltip-placement="right" data-tooltip-target="study">
 
             <a [routerLink]="'Case Studies'" routerLinkActive="bg-opacity-70 dark:bg-opacity-100" class="text-red-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
 </svg>
 </a>
             <a  [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class= " text-[#26282C4] px-3 flex sm:hidden dark:text-gray-200 ">Case Studies</a>
-            <span [routerLink]="['/Case Studies']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
+            <span [routerLink]="['Case Studies']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
                 <img class="" src="../assets/svgs/Vector active.svg" alt="">
 </span>
         </div>
@@ -124,7 +124,7 @@ import { RouterModule, Router } from '@angular/router';
 </a>
                     <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="bg-opacity-70 dark:bg-opacity-100 dark:text-gray-800" class= " text-[#26282C4] px-3 flex sm:hidden dark:text-gray-200">About</a>
                     
-                    <span [routerLink]="['/About']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
+                    <span [routerLink]="['About']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class=" yy absolute right-0 hidden group-hover:flex">
                         <img class="" src="../assets/svgs/Vector active.svg" alt="">
 </span>
                 </div>

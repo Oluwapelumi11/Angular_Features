@@ -21,9 +21,7 @@ export class AppComponent implements OnInit {
   
   title: string = ""
   constructor(private route: ActivatedRoute){
-  
   }
-  
   
   titleFunc(data:any){
    return this.title = data;
@@ -35,5 +33,4 @@ export class AppComponent implements OnInit {
     
   }
   
-
 }

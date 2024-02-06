@@ -1,11 +1,20 @@
-<app-mobile-nav [title]="title"></app-mobile-nav>
+<div class="bg-r ed-500 w-[94vw]">
+    <app-mobile-nav [title]="title"></app-mobile-nav>
+    <div  class="grid grid-rows-3 grid-flow-col text-sm font-semibold px-5">
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/')">Feature Overview</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/typescript')">TypeScript</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/component')">Component Architecture</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/forms')">Reactive Forms</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Services & Depency Injection</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Angular Testing</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Server Side Rendering </button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Angular Animations</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Reactive Programming</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">State Management</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Progressive Web Apps</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Directives and Pipes</button>
+        <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/test')">Angular Material</button>
 
-<div class="grid col-span-1 sm:col-span-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-6 sm:gap-2 p-2 w-[95%] sm:w-[98%] mx-auto">
-<!-- <div class="flex flex-wrap w-full space-x-2 space-y-3 px-1 "> -->
-    @for (feature of featureList; track $index) {
-
-        <app-feature-card [feature]="feature"></app-feature-card>
-        
-    }
-   
+    </div>
+    <router-outlet></router-outlet>
 </div>

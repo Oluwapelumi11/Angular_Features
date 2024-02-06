@@ -1,19 +1,21 @@
-<div class="w-screen font-jakarta    sm:bg-white dark:bg-gray-500 ">
+<div class="w-screen font-jakarta flex  sm:bg-white dark:bg-gray-500 ">
 
 
     <app-sidenavcomponent id="default-sidebar"  class="sm:w-[6%]  bg-[#FAFAFA] dark:bg-gray-800 sm:relative font-jakarta border-r py-[20px] gap-[10px]  sm:flex flex-col justify-between fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"></app-sidenavcomponent>
+<div class="flex sm:w-[94%] w-screen">
 
-        <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button"  class="active:bg-transparent bg-transparent focus:ring-0 flex fixed right-6 top-5 sm:hidden " id="navtoggle" >
-          
+    <!-- <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button"  class="active:bg-transparent bg-transparent focus:ring-0 flex fixed right-6 top-5 sm:hidden " id="navtoggle" >
+        
             <svg width="24" id="open" class="" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="5" width="24" height="2" fill="#D9D9D9"/>
                     <rect x="9" y="12" width="15" height="2" fill="#D9D9D9"/>
                   </svg>
-              </button>
+              </button> -->
     
-        <!--end of main body div -->
-        <router-outlet ></router-outlet>
-    </div>
-
+              <!--end of main body div -->
+              <router-outlet ></router-outlet>
+            </div>
+            
+        </div>
 <!-- end of main bosy div -->
 

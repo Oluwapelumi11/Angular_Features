@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { filter, map } from 'rxjs';
 
 @Injectable({
@@ -7,9 +7,10 @@ import { filter, map } from 'rxjs';
 })
 export class GeneralServiceService {
 
-  constructor() { }
+  constructor(private router:Router,private route:ActivatedRoute) { }
 
-  activeRoute$ = inject(ActivatedRoute)
-  
+  navigate(path:string){
+    return this.router.navigate([path], {relativeTo: this.route})
+  }
   
 }
