@@ -1,6 +1,6 @@
 <div class="bg-r ed-500 w-[94vw]">
     <app-mobile-nav [title]="title"></app-mobile-nav>
-    <div  class="grid grid-rows-3 grid-flow-col text-sm font-semibold px-5">
+    <div  class="grid grid-rows-3 grid-flow-col text-sm font-semibold px-5 sm:w-full w-screen overflow-x-auto">
         <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/')">Feature Overview</button>
         <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/typescript')">TypeScript</button>
         <button class="w-fit mx-3 hover:text-red-600 hover:underline " (click)="navigate('features/component')">Component Architecture</button>
