@@ -1,17 +1,27 @@
 import { Component } from '@angular/core';
 import { ProgressData, ProgressiveComponent } from '../progressive/progressive.component';
+import { FormsModule } from '@angular/forms';
 
-
+export interface selector{
+  index:number,
+  value: number,
+}
 @Component({
   selector: 'app-component-feature',
   standalone: true,
-  imports: [ProgressiveComponent],
+  imports: [ProgressiveComponent,FormsModule],
   templateUrl: './component-feature.component.html',
   styleUrl: './component-feature.component.css'
 })
 export class ComponentFeatureComponent {
 
+option!:selector;
 
+options = [10,20,30,40,50,60,70,80]
+
+setProgress(event:selector){
+  this.progressDataList[event.index].progress = event.value; 
+}
 
   progressDataList: ProgressData[] = [
     {

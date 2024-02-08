@@ -12,9 +12,10 @@
         </div>
 
         <div class="col-span-1 ">
-            Reused component with static properties
+            Reused component with default properties
             <div class="h-[400px] overflow-y-scroll">
                 @for (item of [1,2,3,4,5,6]; track $index) {
+                    
                     <div class=" px-3 py-2 rounded-md bg-white">
                         <app-progressive ></app-progressive>
                     </div>
