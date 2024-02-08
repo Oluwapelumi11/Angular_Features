@@ -1,6 +1,6 @@
-import { CommonModule, NgClass } from '@angular/common';
-import { Component, inject } from '@angular/core';
-import {  ReactiveFormsModule,Validators,FormGroup,FormControl, FormsModule, Validator, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms'
+import { CommonModule } from '@angular/common';
+import { Component} from '@angular/core';
+import {  ReactiveFormsModule,Validators,FormGroup,FormControl, FormsModule, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms'
 
 
 @Component({
@@ -37,7 +37,7 @@ export class FormFeatureComponent {
 
   submit() {
     console.log(this.form.value);
-    form.reset()
+    this.form.reset()
   }
 
 }

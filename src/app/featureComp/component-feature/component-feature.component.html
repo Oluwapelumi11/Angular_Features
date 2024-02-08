@@ -1,1 +1,37 @@
-<p>component-feature works!</p>
+<div class="px-2 py-4">
+
+<p>Angular Component</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 w-full gap-8 mt-8">
+        <div class="col-span-full bg-gray-50 py-2">
+
+            <p>simple Resusable component</p>
+            <div class="sm:w-3/5 px-3 py-2 rounded-md bg-white">
+                <app-progressive ></app-progressive>
+            </div>
+
+        </div>
+
+        <div class="col-span-1 ">
+            Reused component with static properties
+            <div class="h-[400px] overflow-y-scroll">
+                @for (item of [1,2,3,4,5,6]; track $index) {
+                    <div class=" px-3 py-2 rounded-md bg-white">
+                        <app-progressive ></app-progressive>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col-span-1 ">
+            
+            Reused component with dynamic properties
+            <div class="h-[400px] overflow-y-scroll">
+                @for (progress of progressDataList; track $index) {
+                    <div class=" px-3 py-2 rounded-md bg-white">
+                        <app-progressive [progress]="progress" ></app-progressive>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
