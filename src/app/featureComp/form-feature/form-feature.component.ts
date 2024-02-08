@@ -37,6 +37,7 @@ export class FormFeatureComponent {
 
   submit() {
     console.log(this.form.value);
+    form.reset()
   }
 
 }
