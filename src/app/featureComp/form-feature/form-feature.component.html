@@ -1,1 +1,86 @@
-<p>form-feature works!</p>
+<div class="flex flex-col space-y-10 ">
+    <h1 class="text-3xl py-5 px-2 text-center font-semibold mt-5">Angular Reactive Forms Validation Example</h1>
+    <form [formGroup]="form" (ngSubmit)="submit()" class=" h-full w-full transition-all duration-500 px-4 space-y-3">
+        <div class="sm:flex flex-row w-full">
+
+         <div class="flex flex-col space-y-1 flex-1 mx-2">
+             <label for="name">First Name </label>
+             <input formControlName="firstname" id="firstname" type="text" class="outline-none focus:outline-none ring-0 rounded-lg shadow-md"
+             [ngClass]="{'val': (f['firstname'].touched || f['firstname'].dirty) && f['firstname'].invalid}">
+             <div *ngIf="f['firstname'].touched && f['firstname'].invalid" class="alert alert-danger text-red-500">
+                <div *ngIf="f['firstname'].errors?.['required']">*First name is required.</div>
+                <div *ngIf="f['firstname'].errors?.['minlength']">*First name must be at least 4 characters long</div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col space-y-1 flex-1 mx-2">
+            <label for="lastname"> Last Name </label>
+            <input formControlName="lastname" id="lastname" type="text" class="outline-none focus:outline-none ring-0 rounded-lg shadow-md"
+            [ngClass]="{'val': (f['lastname'].touched || f['lastname'].dirty) && f['lastname'].invalid}">
+            <div *ngIf="f['lastname'].touched && f['lastname'].invalid" class="alert alert-danger text-red-500">
+                <div *ngIf="f['lastname'].errors?.['required']">*Last name is required.</div>
+                <div *ngIf="f['lastname'].errors?.['minlength']">*Last name must be at least 4 characters long</div>
+            </div>
+        </div>
+        
+    </div>
+<div class="sm:flex flex-row w-full">
+
+    <div class="flex flex-col space-y-1 flex-1 mx-2">
+        <label for="email"> Email </label>
+        <input formControlName="email" id="email" type="text" class="outline-none focus:outline-none ring-0 rounded-lg shadow-md"
+        [ngClass]="{'val': (f['email'].touched || f['email'].dirty) && f['email'].invalid}">
+        <div *ngIf="f['email'].touched && f['email'].invalid" class="alert alert-danger text-red-500">
+            <div *ngIf="f['email'].errors?.['required']">*Email address is required.</div>
+            <div *ngIf="f['email'].errors?.['email']">*Please enter a valid email address</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-1 flex-1 mx-2">
+        <label for="age"> Age </label>
+        <input formControlName="age" id="age" type="text" class="outline-none focus:outline-none ring-0 rounded-lg shadow-md"
+        [ngClass]="{'val': (f['age'].touched || f['age'].dirty) && f['age'].invalid}">
+        <div *ngIf="f['age'].touched && f['age'].invalid" class="alert alert-danger text-red-500">
+            *Every user of our app must be older than 20 years
+        </div>
+      </div>
+
+    </div>
+      <div class=" my-4 space-y-1">
+
+          <div class="flex flex-col space-y-1 flex-1 mx-2">
+              <label for="name"> Street </label>
+        <input formControlName="street" id="street" type="text" class="outline-none focus:outline-none ring-0 rounded-lg shadow-md"
+        [ngClass]="{'val': (f['street'].touched || f['street'].dirty) && f['street'].invalid}">
+        <div *ngIf="f['street'].touched && f['street'].invalid" class="alert alert-danger text-red-500">
+            <div *ngIf="f['street'].errors?.['required']">*Street is required.</div>
+            <div *ngIf="f['street'].errors?.['minlength']">*Street must be at least 6 characters </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-1 flex-1 mx-2">
+        <label for="city"> City </label>
+        <input formControlName="city" id="city" type="text" class="outline-none focus:outline-none ring-0 rounded-lg shadow-md"
+        [ngClass]="{'val': (f['city'].touched || f['city'].dirty) && f['city'].invalid}">
+        <div *ngIf="f['city'].touched && f['city'].invalid" class="alert alert-danger text-red-500">
+            <div *ngIf="f['city'].errors?.['required']">*City is required</div>
+      </div>
+      </div>
+
+      <div class="flex flex-col space-y-1 flex-1 mx-2">
+        <label for="state"> State </label>
+        <input formControlName="state" id="state" type="text" class="outline-none focus:outline-none ring-0 rounded-lg shadow-md"
+        [ngClass]="{'val': (f['state'].touched || f['state'].dirty) && f['state'].invalid}">
+        <div *ngIf="f['state'].touched && f['state'].invalid" class="alert alert-danger text-red-500">
+            <div *ngIf="f['state'].errors?.['required']">*State is required.</div>
+        </div>
+      </div>
+
+     
+      
+    </div>
+    
+    <button type="submit" [disabled]="form.invalid" class="w-[99%] flex  self-center mx-auto py-2 rounded-md  bg-gradient-to-r from-blue-500 to bg-red-500 text-white justify-center text-xl font-semibold opacity-100 disabled:opacity-55 transition-all duration-500">Submit</button>
+    
+    </form>
+</div>

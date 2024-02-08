@@ -1,0 +1,15 @@
+
+  /* Change border color for invalid input */
+
+
+ .val.ng-invalid:not(form){
+  border: 1px solid red;
+}
+
+input{
+  border: 1px solid black;
+}
+
+.ng-valid:not(form){
+  border: 1px solid green;
+}

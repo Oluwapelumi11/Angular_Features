@@ -17,12 +17,12 @@ getFeatures(){
 
 
   featuresListing: Features[] = [
-    {
-      title: 'TypeScript Integration',
-      description: 'Benefits of type safety and code maintainability with TypeScript',
-      imageUrl: '../assets/feature-images/type.png',
-      link: '/typescript-page'
-    },
+    // {
+    //   title: 'TypeScript Integration',
+    //   description: 'Benefits of type safety and code maintainability with TypeScript',
+    //   imageUrl: '../assets/feature-images/type.png',
+    //   link: '/typescript-page'
+    // },
     {
       title: 'Component-Based Architecture',
       description: 'Build modular and reusable components for a scalable UI',
