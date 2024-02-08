@@ -1,7 +1,8 @@
 <div class="bg-gray-100 p-2 grid-cols-1 sm:grid-cols-2 grid mt-6 h-full w-full gap-4">
     <!-- rxjs here -->
-    <div class="bg-gray-50 rounded-lg shadow-md px-2 py-3  h-[500px] flex flex-col justify-between">
-        <div class="flex justify-between px-2 py-6">
+    <div class="bg-gray-50 rounded-lg shadow-md px-2 py-3  h-[500px] relative flex flex-col justify-between">
+        <p class="text-center py-6 w-full font-semibold absolute top-0 text-2xl ">RxJs Example Usage</p>
+        <div class="flex justify-between px-2 py-6 mt-8">
             <input type="text" [(ngModel)]="searchstring" (ngModelChange)="inputChanged($event)" placeholder="Search..." class="w-3/5 outline-none ring-red-400 border border-red-300 focus:ring-red-700 placeholder:text-red-400 rounded-3xl  ring-0 border-none  bg-white  text-red-500">
             <button (click)="searchstring=''" class="bg-red-600 rounded-md text-white w-1/5 focus:ring-0  px-2 py-1 ">Clear</button>
         </div>
@@ -21,13 +22,14 @@
     <!--end of rxjs here -->
     <!-- signals here -->
     <div class="bg-gray-50 rounded-lg shadow-md px-2 py-3 ">
+        <p class="text-center py-6 w-full font-semibold text-2xl ">Angular Signals Example Usage</p>
         <div class="">
             <p>Select the Quantity of {{ selectedVehicle().name }} you want to buy</p>
         <div class=" flex justify-around">
-            <select class=" my-4 h-9 rounded-lg w-1/6 " [ngModel]="quantity()" (change)="onQuantitySelected($any($event.target).value)">
-                <option value="" disabled >--Select your quantity--</option>
+            <select class=" my-4 h-9 rounded-lg sm:w-2/6 " [ngModel]="quantity()" (change)="onQuantitySelected($any($event.target).value)">
+                <option value="0"class="text-xs whitespace-nowrap" selected disabled >--Select your quantity--</option>
                 @for(qty of qtyAvailable(); track $index){
-                    <option selected >{{ qty }}</option>
+                    <option >{{ qty }}</option>
                 }
             </select>
             
